@@ -8,6 +8,9 @@ const Welcome = ({navigation}) => {
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Welcome')}>
                     <Text style={styles.text}>Welcome</Text>
                 </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('DragAndDrop')}>
+                    <Text style={styles.text}>Drag & Drop</Text>
+                </TouchableOpacity>
                 <TouchableOpacity style={styles.button} onPress={() => alert('In progress...')}>
                     <Text style={styles.text}>Other Animation</Text>
                 </TouchableOpacity>
