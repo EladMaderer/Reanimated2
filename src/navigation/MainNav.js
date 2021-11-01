@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../Home';
 import Welcome from '../welcome/Welcome';
 import DragAndDrop from '../dragAndDrop/DragAndDrop';
+import Theme from '../theme/Theme';
 
 import React from 'react';
 
@@ -14,6 +15,7 @@ const MainNav = () => {
                 <Stack.Screen options={{ title: 'Animations' }} name="Home" component={Home} />
                 <Stack.Screen name="Welcome" component={Welcome} />
                 <Stack.Screen name="DragAndDrop" component={DragAndDrop} />
+                <Stack.Screen name="Theme" component={Theme} />
             </Stack.Navigator>
         </NavigationContainer>
     );

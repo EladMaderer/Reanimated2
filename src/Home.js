@@ -11,8 +11,8 @@ const Welcome = ({navigation}) => {
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('DragAndDrop')}>
                     <Text style={styles.text}>Drag & Drop</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={() => alert('In progress...')}>
-                    <Text style={styles.text}>Other Animation</Text>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Theme')}>
+                    <Text style={styles.text}>Theme</Text>
                 </TouchableOpacity>
             </View>
         </View>
