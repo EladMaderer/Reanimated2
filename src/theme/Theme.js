@@ -9,6 +9,9 @@ import Animated, {
 } from 'react-native-reanimated';
 
 const Theme = () => {
+    React.useEffect(() => {
+        console.log('theme')
+    }, []);
     const [theme, setTheme] = useState('light');
     const SIZE = Dimensions.get('window').width * 0.7;
     const THEME = {

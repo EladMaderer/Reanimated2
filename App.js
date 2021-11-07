@@ -1,16 +1,19 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import MainNav from './src/navigation/MainNav';
 
 const App = () => {
 
 
-  return (
-    <SafeAreaView style={styles.container}>
-      <MainNav />
-    </SafeAreaView>
-  );
+    return (
+        <GestureHandlerRootView style={{flex: 1}}>
+            <SafeAreaView style={styles.container}>
+                <MainNav/>
+            </SafeAreaView>
+        </GestureHandlerRootView>
+    );
 };
 
 const styles = StyleSheet.create({
